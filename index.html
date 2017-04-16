@@ -3,10 +3,20 @@
 <head>
 <meta charset="utf-8">
 <title>GG</title>
+<style>
+body{margin:0; padding:0;}
+</style>
 <script>
+function changeFrameHeight(){
+    var ifm= document.getElementById("iframepage"); 
+    ifm.height=document.documentElement.clientHeight;
+}
+window.onresize=function(){  
+     changeFrameHeight();  
+}
 </script>
 </head>
-<body><iframe src="http://42.51.158.129/GG.html">
+<body><iframe id="myiframe" onload="changeFrameHeight()" src="http://42.51.158.129/GG.html">
   <p>您的浏览器不支持  iframe 标签。</p>
 </iframe>
 </body>
