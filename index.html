@@ -8,7 +8,7 @@ body{margin:0; padding:0;}
 </style>
 <script>
 function changeFrameHeight(){
-    var ifm= document.getElementById("iframepage"); 
+    var ifm= document.getElementById("myiframe"); 
     ifm.height=document.documentElement.clientHeight;
 }
 window.onresize=function(){  
@@ -16,7 +16,7 @@ window.onresize=function(){
 }
 </script>
 </head>
-<body><iframe id="myiframe" onload="changeFrameHeight()" src="http://42.51.158.129/GG.html">
+<body><iframe id="myiframe" onload="changeFrameHeight()" width="100%" src="http://42.51.158.129/GG.html">
   <p>您的浏览器不支持  iframe 标签。</p>
 </iframe>
 </body>
